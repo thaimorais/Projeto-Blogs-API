@@ -1,4 +1,3 @@
-const authToken = require('../middlewares/authtoken');
 const { user } = require('../services');
 
 const login = async (req, res) => {
@@ -29,8 +28,18 @@ const getUsers = async (_req, res) => {
   return res.status(200).json(users);
 };
 
+const getUserById = async (req, res) => {
+  const { id } = req.params;
+  const { type, message } = await user.getUserById(id);
+
+  if (type) return res.status(404).json({ message });
+
+  return res.status(200).json(message);
+};
+
 module.exports = {
   login,
   newUser,
   getUsers,
+  getUserById,
 };
