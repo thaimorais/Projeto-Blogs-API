@@ -50,7 +50,14 @@ const newUser = async (data) => {
   return { type: 'SUCESS', message: token };
 };
 
+const getUsers = async () => {
+  const users = await User.findAll({ attributes: { exclude: ['password'] } });
+
+  return users;
+};
+
 module.exports = { 
   validateUser,
   newUser,
+  getUsers,
 };

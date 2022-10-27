@@ -1,3 +1,4 @@
+const authToken = require('../middlewares/authtoken');
 const { user } = require('../services');
 
 const login = async (req, res) => {
@@ -22,7 +23,14 @@ const newUser = async (req, res) => {
   return res.status(201).json({ token: message });
 };
 
+const getUsers = async (_req, res) => {
+  const users = await user.getUsers();
+
+  return res.status(200).json(users);
+};
+
 module.exports = {
   login,
   newUser,
+  getUsers,
 };
