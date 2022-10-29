@@ -13,6 +13,13 @@ const addNewCategory = async (body) => {
   return { type: null, message: createdCategory };
 };
 
+const getCategories = async () => {
+  const result = await Category.findAll();
+
+  return result;
+};
+
 module.exports = {
   addNewCategory,
+  getCategories,
 };
