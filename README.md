@@ -1,13 +1,19 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto - Api de Blogs
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+O objetivo deste projeto era desenvolver uma API em `Node.js` utilizando o pacote `sequelize`.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## O que foi desenvolvido?
+Para a criação da API, foi inicialmente desenvolvido as `migrations` e em seguida as `models` para popular o Banco de Dados. Em seguida, efetuou-se os endpoints que se conectavam com o BD seguindo os princípios `REST`. 
+
+## Ferramentas utilizadas
+
+* Node.js
+* Docker
+* MySQL Workbench
+* Thunder Client
+* Sequelize
+
+## Como visualizar o projeto
+* Clone o repositório:
+```git clone git@github.com:thaimorais/Projeto-Carrinho-de-Compras.git```
+* Abra seu editor e execute a aplicação
