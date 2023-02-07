@@ -15,5 +15,5 @@ Para a criação da API, foi inicialmente desenvolvido as `migrations` e em segu
 
 ## Como visualizar o projeto
 * Clone o repositório:
-```git clone git@github.com:thaimorais/Projeto-Carrinho-de-Compras.git```
-* Abra seu editor e execute a aplicação
+```git clone git@github.com:thaimorais/Projeto-Blogs-API.git```
+* Abra o arquivo no seu editor
